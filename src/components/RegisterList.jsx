@@ -1,18 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useRecoilValue } from 'recoil';
 import RegisterItem from './RegisterItem';
+import { urlState } from '../state';
 
 function RegisterList() {
+  const url = useRecoilValue(urlState);
+
   return (
     <div>
-      <RegisterItem />
-      <RegisterItem />
-      <RegisterItem />
-      <RegisterItem />
+      <RegisterItem url={url} />
+      <RegisterItem url={url} />
+      <RegisterItem url={url} />
+      <RegisterItem url={url} />
     </div>
   );
 }
-
-RegisterList.propTypes = {};
 
 export default RegisterList;

@@ -1,23 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+import RepoItem from './RepoItem';
+import '../styles/RepoList.css';
 
-function RepoList() {
-  const [repoName, setRepoName] = useState('');
-
-  useEffect(() => {
-    axios
-      .get('/search/repositories', {
-        q: '',
-      })
-      .then((res) => {
-        console.log(res);
-        setRepoName(res.items.name);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  });
-  return <div></div>;
+function RepoList({ repoList }) {
+  if (!repoList) {
+    return <div></div>;
+  }
+  return (
+    <div id="search_result">
+      {repoList.map((repoItem) => (
+        <RepoItem repoItem={repoItem} />
+      ))}
+    </div>
+  );
 }
 
 export default RepoList;

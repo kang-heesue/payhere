@@ -5,12 +5,14 @@ import Search from './pages/Search';
 import Register from './pages/Register';
 import Issue from './pages/Issue';
 import Header from './components/Header';
+import RegisterState from './components/RegisterState';
 axios.defaults.withCredentials = true;
 
 function App() {
   return (
     <div className="container">
       <Header />
+      <RegisterState />
       <Switch>
         <Route exact path="/" component={Search} />
         <Route exact path="/register" component={Register} />

@@ -1,6 +1,6 @@
 import { atom } from 'recoil';
 
-export const registerState = atom({
-  key: 'register',
-  default: [],
+export const urlState = atom({
+  key: 'url',
+  default: null,
 });

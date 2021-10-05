@@ -1,13 +1,14 @@
-#search_container {
+#search_bar {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 #search_button {
   width: 80px;
   border: 0;
-  font-size: 19px;
+  font-size: 22px;
   background-color: rgba(187, 187, 187, 0.466);
 }

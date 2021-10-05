@@ -1,0 +1,26 @@
+#repository_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#repository_info {
+  margin: 20px;
+}
+
+#repository_info_name {
+  font-size: 30px;
+  margin: 20px;
+}
+
+#repository_info_owner {
+  font-size: 20px;
+  margin: 20px;
+}
+
+#repository_button {
+  width: 60px;
+  font-size: 19px;
+  margin: 40px 30px;
+  background-color: rgba(187, 187, 187, 0.466);
+}
